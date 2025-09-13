@@ -1,0 +1,19 @@
+body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        .gradient-bg-orange {
+            background: linear-gradient(to right, #f8d40a, #f5a623);
+        }
+        .gradient-bg-blue {
+            background: linear-gradient(to right, #003366, #0A66C2);
+        }
+        .text-gradient-orange {
+            background-image: linear-gradient(to right, #f8d40a, #f5a623);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* New class for yellow background */
+        .gradient-bg-yellow {
+            background: linear-gradient(to right, #FFD700, #FFA500);
+        }

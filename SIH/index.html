@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlumneX - ITS Engineering College Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://lh3.googleusercontent.com/p/AF1QipM6URrVywVyT_AYi-gOjlXCWQlowqDweCnlELDj=s1360-w1360-h1020-rw" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        .gradient-bg-orange {
+            background: linear-gradient(to right, #f8d40a, #f5a623);
+        }
+        .gradient-bg-blue {
+            background: linear-gradient(to right, #003366, #0A66C2);
+        }
+        .text-gradient-orange {
+            background-image: linear-gradient(to right, #f8d40a, #f5a623);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* New class for yellow background */
+        .gradient-bg-yellow {
+            background: linear-gradient(to right, #FFD700, #FFA500);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="bg-black shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Site Name -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="image/Gemini_Generated_Image_mj8bemj8bemj8bem-removebg-preview (2).png" alt="AlumneX Logo" class="h-24">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#" class="text-white hover:text-blue-400 transition-colors duration-300 font-medium">Home</a>
+                <a href="#dashboard" class="text-white hover:text-blue-400 transition-colors duration-300 font-medium">Dashboard</a>
+                <a href="#news-events" class="text-white hover:text-blue-400 transition-colors duration-300 font-medium">News & Events</a>
+                <a href="login/login.html" class="px-4 py-2 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-colors duration-300 shadow-md">Login</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 shadow-lg py-2">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700">Home</a>
+            <a href="#dashboard" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700">Dashboard</a>
+            <a href="#news-events" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700">News & Events</a>
+            <a href="login.html" class="block px-4 py-2 text-sm text-orange-400 font-medium hover:bg-gray-700">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section - Based on image_dff76f.jpg -->
+        <section class="relative bg-black h-[600px] md:h-[750px] overflow-hidden">
+            <img src="image/Graduate Silhouette Abstract Background, Graduation Ceremony, Graduation Celebration, Bachelor Cap Background Image And Wallpaper for Free Download.png" alt="ITS Engineering College Campus" class="absolute inset-0 object-cover w-full h-full opacity-70">
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center h-full relative z-10 text-center">
+                <div class="max-w-3xl text-white">
+                    <p class="text-xl md:text-3xl font-bold mb-2">Welcome To The Community</p>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                        AlumneX
+                    </h1>
+                    <button class="px-8 py-4 bg-orange-400 text-gray-900 font-semibold rounded-full shadow-lg hover:bg-orange-500 transition-colors duration-300 mt-6">
+                        CONNECT NOW
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alumni Spotlight Section - Based on image_dffeda.png -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Our Top Achievers</h2>
+                    <div class="w-24 h-1 bg-orange-400 mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Udit Bhaskar Card -->
+                    <div class="bg-blue-600 p-8 rounded-3xl flex flex-col md:flex-row items-center text-white shadow-lg">
+                        <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 mb-4 md:mb-0 md:mr-6 rounded-2xl overflow-hidden border-4 border-white">
+                            <img src="image/WhatsApp Image 2025-09-11 at 2.46.41 PM (1).png" alt="Udit Bhaskar" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-orange-300">Udit Bhaskar</h3>
+                            <p class="text-lg font-medium">B.Tech CSE - 2024</p>
+                            <p class="flex items-center justify-center md:justify-start text-sm mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-9.95 9.06A10 10 0 0012 22a10 10 0 009.95-9.06A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zM12 6a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                                Duco Consultancy
+                            </p>
+                            <p class="flex items-center justify-center md:justify-start text-sm mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-9.95 9.06A10 10 0 0012 22a10 10 0 009.95-9.06A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zM12 6a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                                <span class="text-lg font-bold text-orange-300">₹23.00 LPA</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Prakarti Goel Card -->
+                    <div class="bg-blue-600 p-8 rounded-3xl flex flex-col md:flex-row items-center text-white shadow-lg">
+                        <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 mb-4 md:mb-0 md:mr-6 rounded-2xl overflow-hidden border-4 border-white">
+                            <img src="image/WhatsApp Image 2025-09-11 at 2.46.41 PM.png" alt="Prakarti Goel" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-orange-300">Prakarti Goel</h3>
+                            <p class="text-lg font-medium">B.Tech CSE - 2024</p>
+                            <p class="flex items-center justify-center md:justify-start text-sm mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-9.95 9.06A10 10 0 0012 22a10 10 0 009.95-9.06A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zM12 6a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                                Microsoft
+                            </p>
+                            <p class="flex items-center justify-center md:justify-start text-sm mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-9.95 9.06A10 10 0 0012 22a10 10 0 009.95-9.06A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zM12 6a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                                <span class="text-lg font-bold text-orange-300">₹49.00 LPA</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- New Alumni Card 3 -->
+                    <div class="bg-blue-600 p-8 rounded-3xl flex flex-col md:flex-row items-center text-white shadow-lg">
+                        <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 mb-4 md:mb-0 md:mr-6 rounded-2xl overflow-hidden border-4 border-white">
+                            <img src="image/Urvashi Sharma.png" alt="Urvashi Sharma" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-orange-300">Urvashi Sharma</h3>
+                            <p class="text-lg font-medium">B.Tech IT - 2023</p>
+                            <p class="flex items-center justify-center md:justify-start text-sm mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-9.95 9.06A10 10 0 0012 22a10 10 0 009.95-9.06A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zM12 6a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                                Google
+                            </p>
+                            <p class="flex items-center justify-center md:justify-start text-sm mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-9.95 9.06A10 10 0 0012 22a10 10 0 009.95-9.06A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zM12 6a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                                <span class="text-lg font-bold text-orange-300">₹35.00 LPA</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- New Alumni Card 4 -->
+                    <div class="bg-blue-600 p-8 rounded-3xl flex flex-col md:flex-row items-center text-white shadow-lg">
+                        <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 mb-4 md:mb-0 md:mr-6 rounded-2xl overflow-hidden border-4 border-white">
+                            <img src="image/Devendra Rai.png" alt="Devendra Rai" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-orange-300">Devendra Rai</h3>
+                            <p class="text-lg font-medium">B.Tech ECE - 2024</p>
+                            <p class="flex items-center justify-center md:justify-start text-sm mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-9.95 9.06A10 10 0 0012 22a10 10 0 009.95-9.06A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zM12 6a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                                Amazon
+                            </p>
+                            <p class="flex items-center justify-center md:justify-start text-sm mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-9.95 9.06A10 10 0 0012 22a10 10 0 009.95-9.06A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zM12 6a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                                <span class="text-lg font-bold text-orange-300">₹32.00 LPA</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote and Image Banner Section - Based on image_e00672.jpg -->
+        <section class="py-12 bg-white text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-3xl font-light text-gray-700 mb-4 leading-relaxed">
+                        “I feel fortunate to be joining my classmates in welcoming the Class of 2024 to the ITS Engineering College alumni community <span class="text-blue-500">@ITSEngineeringCollege</span>”
+                    </p>
+                    <p class="text-sm font-medium text-gray-500">@ITS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section - Based on image_e009d9.png -->
+        <section id="dashboard" class="py-20 bg-gray-50 text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">My AlumneX Dashboard</h2>
+                    <div class="w-24 h-1 bg-orange-400 mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    <!-- Dashboard Card 1 -->
+                    <div class="p-6 rounded-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-orange-400 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.896-5.896A2 2 0 0113.104 2.104L21 8m-1 12H4a2 2 0 01-2-2V9a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Checking Messages</h3>
+                        <p class="text-gray-600">Easily view and respond to messages from your fellow alumni and the college administration to stay connected.</p>
+                    </div>
+
+                    <!-- Dashboard Card 2 -->
+                    <div class="p-6 rounded-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-orange-400 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4a4 4 0 100 8 4 4 0 000-8zm-6 9a6 6 0 00-6 6v2h12v-2a6 6 0 00-6-6zM18 13a6 6 0 006 6v2h-6v-2a6 6 0 00-6-6z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Update My Information</h3>
+                        <p class="text-gray-600">Keep your professional and personal details up-to-date so others can find and connect with you.</p>
+                    </div>
+
+                    <!-- Dashboard Card 3 -->
+                    <div class="p-6 rounded-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-orange-400 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v5a2 2 0 002-2v-3a2 2 0 00-2-2zM5 14v5a2 2 0 002-2v-3a2 2 0 00-2-2zM19 14v5a2 2 0 002-2v-3a2 2 0 00-2-2zM12 5a2 2 0 00-2 2v3a2 2 0 002 2h0a2 2 0 002-2V7a2 2 0 00-2-2zM5 5a2 2 0 00-2 2v3a2 2 0 002 2h0a2 2 0 002-2V7a2 2 0 00-2-2zM19 5a2 2 0 00-2 2v3a2 2 0 002 2h0a2 2 0 002-2V7a2 2 0 00-2-2z"/>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Join with Alumni Forum</h3>
+                        <p class="text-gray-600">Engage with the community, discuss industry trends, and network with peers in our exclusive alumni forums.</p>
+                    </div>
+
+                    <!-- Dashboard Card 4 -->
+                    <div class="p-6 rounded-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-orange-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Search Alumni Directory</h3>
+                        <p class="text-gray-600">Find and connect with fellow graduates by searching our comprehensive, centralized alumni directory.</p>
+                    </div>
+                </div>
+                <button class="inline-block px-8 py-4 gradient-bg-orange text-gray-900 font-bold rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    LOG IN TO ALUMNEX
+                </button>
+            </div>
+        </section>
+
+        <!-- News, Jobs, and Events Section - Based on image_e0099a.jpg -->
+        <section id="news-events" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Latest News Column -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Latest News</h3>
+                        <div class="space-y-6">
+                            <p class="text-gray-500 text-center py-10">No latest news available at the moment.</p>
+                        </div>
+                        <a href="#" class="mt-6 block text-center font-medium text-blue-600 hover:underline">View All News</a>
+                    </div>
+
+                    <!-- Career Opportunity Column -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Career Opportunity</h3>
+                        <div class="space-y-6">
+                            <p class="text-gray-500 text-center py-10">No career opportunities available at the moment.</p>
+                        </div>
+                        <a href="#" class="mt-6 block text-center font-medium text-blue-600 hover:underline">View All Career Opportunities</a>
+                    </div>
+
+                    <!-- Event Calendar Column -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Event Calendar</h3>
+                        <div class="space-y-6">
+                            <!-- Event Card 1 -->
+                            <div class="bg-gray-100 p-4 rounded-xl shadow-sm flex space-x-4">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-gray-600">DEC</p>
+                                    <p class="text-3xl font-bold text-gray-900">02</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Celebrity Night - UDGOSH - 2025</h4>
+                                    <p class="text-sm text-gray-600 mt-1">ITS Engineering College's annual cultural fest featured a Celebrity Night with Rahul Jain as the performer. The event took place on the second day of the fest, following a traditional lamp lighting ceremony and Saraswati Vandana. UDGOSH also includes various sports competitions, talks with celebrities, and other cultural events.</p>
+                                </div>
+                            </div>
+                            <!-- Event Card 2 -->
+                            <div class="bg-gray-100 p-4 rounded-xl shadow-sm flex space-x-4">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-gray-600">DEC</p>
+                                    <p class="text-3xl font-bold text-gray-900">13</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">TechTrix 2025</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Where innovation Meets imagination! This year, we're pushing boundaries like never before, blending cutting-edge technology, entrepreneurship, and creativity into an unforgettable experience. From mind-blowing exhibitions and thrilling hackathons to visionary keynote sessions and electrifying competitions.</p>
+                                </div>
+                            </div>
+                            <!-- Event Card 3 -->
+                            <div class="bg-gray-100 p-4 rounded-xl shadow-sm flex space-x-4">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-gray-600">DEC</p>
+                                    <p class="text-3xl font-bold text-gray-900">15</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Farewell MBA Batch 2023-2025</h4>
+                                    <p class="text-sm text-gray-600 mt-1">A heartwarming farewell to our MBA Batch 2023-2025! An evening of emotions, laughter, dance & memories at Raman Hall. Cheers to new beginnings!</p>
+                                </div>
+                            </div>
+                            <!-- Event Card 4 -->
+                            <div class="bg-gray-100 p-4 rounded-xl shadow-sm flex space-x-4">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-gray-600">DEC</p>
+                                    <p class="text-3xl font-bold text-gray-900">20</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Club Sponsorship 2022-2023</h4>
+                                    <p class="text-sm text-gray-600 mt-1">A celebration recognizing the generous contributions of our corporate sponsors for the current academic year.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="mt-6 block text-center font-medium text-blue-600 hover:underline">View All Events</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - Based on image_e0061d.jpg -->
+    <footer class="bg-gray-900 text-gray-400">
+        <!-- Email Subscription Form -->
+        <div class="py-12 bg-gray-800 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-2">Don't Miss Awesome Story From Our Alumni</h3>
+                <p class="text-gray-400 mb-6">Receive exciting news, updates, and stories directly in your inbox.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <input type="email" placeholder="Your E-mail address" class="w-full sm:w-80 px-4 py-3 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    <button class="w-full sm:w-auto px-8 py-3 gradient-bg-yellow text-gray-900 font-semibold rounded-full hover:shadow-lg transition-shadow duration-300">
+                        SUBSCRIBE
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="py-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-8 text-center md:text-left">
+                <!-- Logo and Description -->
+                <div class="w-full md:w-1/3 space-y-4">
+                    <img src="image/Gemini_Generated_Image_mj8bemj8bemj8bem-removebg-preview (2).png" alt="AlumneX Logo" class="mx-auto md:mx-0 h-24">
+                    <p class="text-sm">AlumneX, the official alumni association of ITS Engineering College. The best university in the world located in Greater Noida.</p>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="w-full md:w-2/3 grid grid-cols-2 sm:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="font-bold text-white mb-4">UNIVERSITY</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:underline">STUDENTS</a></li>
+                            <li><a href="#" class="hover:underline">EVENTS</a></li>
+                            <li><a href="#" class="hover:underline">GALLERY</a></li>
+                            <li><a href="#" class="hover:underline">NEWS</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-4">ALUMNI</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:underline">CONTACTS</a></li>
+                            <li><a href="#" class="hover:underline">CAREER</a></li>
+                            <li><a href="#" class="hover:underline">ABOUT US</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-4">SUPPORT</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:underline">Support</a></li>
+                            <li><a href="#" class="hover:underline">Contact</a></li>
+                            <li><a href="#" class="hover:underline">Help</a></li>
+                            <li><a href="#" class="hover:underline">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start">
+                        <button class="px-8 py-3 gradient-bg-yellow text-gray-900 font-semibold rounded-full hover:shadow-lg transition-shadow duration-300 mb-6 w-full md:w-auto">
+                            ALUMNEX ACCOUNT
+                        </button>
+                        <div class="flex space-x-4">
+                            <!-- Social Media Icons (placeholders) -->
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
